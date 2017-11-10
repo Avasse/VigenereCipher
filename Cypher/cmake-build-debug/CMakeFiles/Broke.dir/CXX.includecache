@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/XFR7254007/Desktop/work/dev/VigenereCypher/Broke/main.cpp
+iostream
+-
+fstream
+-
+string
+-
+iomanip
+-
+

@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/XFR7254007/Desktop/work/dev/VigenereCypher/EncryptDecrypt/main.cpp
+iostream
+-
+fstream
+-
+
