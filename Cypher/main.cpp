@@ -90,10 +90,10 @@ string getFinalKey (string text, int keyLength){
 }
 
 int main() {
-
-    string firstText, secondText, line, firstCleanText, secondCleanText; // Added this line
+    int close;
+    string firstText, secondText, line, firstCleanText, secondCleanText;
     ifstream file;
-    file.open ("../texts/first.txt");
+    file.open ("./texts/first.txt");
 
     //Get first text
     while (!file.eof())
@@ -108,7 +108,7 @@ int main() {
         }
     }
 
-    file.open ("../texts/second.txt");
+    file.open ("./texts/second.txt");
 
     //Get second text
     while (!file.eof())
@@ -126,14 +126,14 @@ int main() {
     int keyLenghtFirst = getKeyLenght(firstCleanText);
     string keyFirst = getFinalKey(firstCleanText, keyLenghtFirst);
 
-    ofstream firstOutfile ("../premierTexteClair.txt");
+    ofstream firstOutfile ("./premierTexteClair.txt");
     firstOutfile << decrypt(firstText,keyFirst);
     firstOutfile.close();
 
     int keyLenghtSecond = getKeyLenght(secondCleanText);
     string keySecond = getFinalKey(secondCleanText, keyLenghtSecond);
 
-    ofstream secondOutfile ("../deuxiemeTexteClair.txt");
+    ofstream secondOutfile ("./deuxiemeTexteClair.txt");
     secondOutfile << decrypt(secondText,keySecond);
     secondOutfile.close();
 
@@ -146,7 +146,9 @@ int main() {
     cout << "*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_SECOND TEXT RESULTS_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*" << endl << endl;
     cout << "KEY LENGTH : " << keyLenghtSecond << endl;
     cout << "FINAL KEY : " << keySecond << endl;
-    cout << "YOU CAN FIND THE DECRYPTED TEXT AT ./deuxiemeTexteClair.txt";
+    cout << "YOU CAN FIND THE DECRYPTED TEXT AT ./deuxiemeTexteClair.txt" << endl << endl;
+    cout << "*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_ENTER SOMETHING TO CLOSE PROGRAM, THANKS YOU_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*" << endl << endl;
+    cin >> close;
 
     return 0;
 }
