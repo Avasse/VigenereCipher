@@ -6,13 +6,15 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/XFR7254007/Desktop/work/dev/VigenereCypher/Broke/main.cpp
+C:/Users/utilisateur/Desktop/M1I2L/CRYPTO/VigenereCypher/Cypher/main.cpp
 iostream
 -
 fstream
 -
-string
--
 iomanip
+-
+algorithm
+-
+fstream
 -
 
