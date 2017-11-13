@@ -1,1 +1,1 @@
-# VigenereCypher
+# VigenereCipher
